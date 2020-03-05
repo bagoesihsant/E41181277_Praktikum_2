@@ -73,6 +73,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+/**
+ * File ini berfungsi untuk melakukan koneksi Code Igniter dengan Database MySQL
+ */
+
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',

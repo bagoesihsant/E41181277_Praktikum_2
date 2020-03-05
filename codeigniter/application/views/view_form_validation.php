@@ -1,3 +1,6 @@
+
+<!-- File ini adalah view yang akan ditampilkan oleh controller model_belajar -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +8,9 @@
 </head>
 <body>
 	<h1>Membuat Form Validation dengan CodeIgniter</h1>
+	<!-- Fungsi ini berfungsi untuk menambilkan pesan error dari validasi yang gagal -->
 	<?php echo validation_errors(); ?>
+	<!-- Fungsi ini berfungsi untuk membuat tag form yang berisi action dan method -->
 	<?php echo form_open('model_belajar/cek_input'); ?>
 		<label>Nama</label><br/>
 		<input type="text" name="nama"><br/>

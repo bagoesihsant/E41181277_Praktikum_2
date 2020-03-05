@@ -58,6 +58,10 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
+
+/**
+ * Meload / memuat library yang disediakan oleh Code Igniter kedalam project
+ */
 $autoload['libraries'] = array('database','form_validation','librarytopek');
 
 /*
@@ -89,6 +93,13 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+
+/**
+ * Memuat library - library penolong yg disediakan oleh Code Igniter
+ * untuk memudahkan pengguna dalam melakukan development seperti
+ * penggantian penulisan link yang panjang dengan fungsi base_url()
+ */
+
 $autoload['helper'] = array('url','html','download');
 
 /*

@@ -1,3 +1,6 @@
+
+<!-- File ini adalah view yang akan ditampilkan melalui controller model_belajar -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
