@@ -12,23 +12,14 @@
 ## 3. routes.php
    File ini berfungsi untuk mengatur *routing* atau pengarahan *URL* dari Code Igniter
   
-## 4. belajar.php
-   File ini merupakan *controller* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
-
-## 5. model_belajar.php
-   File ini merupakan *controller* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
-
-## 6. Selamat.php
+## 4. belajar.php, model_belajar.php, Selamat.php, Overview.php, 
    File ini merupakan *controller* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
    
-## 7. Overview.php
-   File ini merupakan *controller* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
-
-## 8. libarytopek.php
+## 5. libarytopek.php
    File ini merupakan *class* yang memiliki beberapa *method* dan digunakan sebagai *custom library* dalam Code Igniter ini.
 
-## 9. m_data.php
+## 6. m_data.php
    File ini merupakan *model* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
    
-## 10. views/admin/overview.php, view_belajar.php, view_download.php, view_form_validation.php,view_selamat.php, view_uri_belajar.php
+## 7. views/admin/overview.php, view_belajar.php, view_download.php, view_form_validation.php,view_selamat.php, view_uri_belajar.php
    File ini merupakan *view* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
