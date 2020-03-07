@@ -55,4 +55,5 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ```php
       $config['base_url'] = 'https://www.contohlinkamu.com';
       ```
+   4. Fungsi dari baris kode diatas adalah mempermudah developer mengatur url ketika memuat resource atau mengatur url untuk berpindah halaman.
     
