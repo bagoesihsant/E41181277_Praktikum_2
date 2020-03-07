@@ -21,7 +21,7 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    File ini berfungsi untuk memuat seluruh **_library_** yang ada di dalam Code Igniter.
    
    1. Setelah selesai instalasi Code Igniter, buka folder **application/confing**       kemudian buka **_autoload.php_**.
-
+   
    2. Dalam **_autoload.php_**, temukan kode 
       ```php
       $autoload['libraries'] = array();
@@ -38,3 +38,18 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ```php
       $autoload['helper'] = array('url','html','download');
       ```
+      
+## 2. _config.php_
+   File ini berfungsi sebagai konfigurasi Code Igniter yang sudah anda install kedalam folder anda.
+   
+   1. Setelah selesai mengisi **_autoload.php_**, buka folder **application/config** kemudian buka **_config.php_**.
+   
+   2. Dalam **_config.php_**, temukan kode
+      ```php
+      $config['base_url'] = '';
+      ```
+   3. Kemudian tambahkan **_URL_** atau link kalian kedalam kode tersebut.
+      ```php
+      $config['base_url'] = 'https://www.contohlinkamu.com';
+      ```
+    
