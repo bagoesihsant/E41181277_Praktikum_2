@@ -56,4 +56,60 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       $config['base_url'] = 'https://www.contohlinkamu.com';
       ```
    4. Fungsi dari baris kode diatas adalah mempermudah developer mengatur url ketika memuat resource atau mengatur url untuk berpindah halaman.
+   
+## 3. _database.php_
+   File ini berfungsi sebagai konfigurasi database yang akan kita gunakan.
+   
+   1. Setelah selesai mengisi **_config.php_**, buka folder **apllication/config** kemudian buka **_database.php_**.
+   
+   2. Dalam **_database.php_**, temukan kode
+      ```php
+      $db['default'] = array(
+            'dsn'	=> '',
+            'hostname' => 'localhost',
+            'username' => '',
+            'password' => '',
+            'database' => '',
+            'dbdriver' => 'mysqli',
+            'dbprefix' => '',
+            'pconnect' => FALSE,
+            'db_debug' => (ENVIRONMENT !== 'production'),
+            'cache_on' => FALSE,
+            'cachedir' => '',
+            'char_set' => 'utf8',
+            'dbcollat' => 'utf8_general_ci',
+            'swap_pre' => '',
+            'encrypt' => FALSE,
+            'compress' => FALSE,
+            'stricton' => FALSE,
+            'failover' => array(),
+            'save_queries' => TRUE
+      );
+      ```
+   3. Kemudian tambahkan konfigurasi server berisi database yang akan digunakan, dengan memasukkan username server, dan password ( bila ada ), kemudian nama database yang akan digunakan.
+   
+   4. Contoh kode :
+   ```php
+   $db['default'] = array(
+            'dsn'	=> '',
+            'hostname' => 'localhost',
+            'username' => 'root',
+            'password' => '*****',
+            'database' => 'contohdb',
+            'dbdriver' => 'mysqli',
+            'dbprefix' => '',
+            'pconnect' => FALSE,
+            'db_debug' => (ENVIRONMENT !== 'production'),
+            'cache_on' => FALSE,
+            'cachedir' => '',
+            'char_set' => 'utf8',
+            'dbcollat' => 'utf8_general_ci',
+            'swap_pre' => '',
+            'encrypt' => FALSE,
+            'compress' => FALSE,
+            'stricton' => FALSE,
+            'failover' => array(),
+            'save_queries' => TRUE
+      );
+   ```   
     
