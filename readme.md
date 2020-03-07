@@ -1,25 +1,39 @@
-# Dokumentasi dari Praktikum 2 Workshop Web Framework
-  Berikut ini adalah dokumentasi dari file - file yang diakses selama praktikum :
+# Dokumentasi Praktikum 2 Workshop Web Framework
 
-#### NB : Seluruh file yang telah disebutkan dalam dokumentasi ini telah diberikan dokumentasi lebih lanjut didalam file tersebut.
+Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
 
-## 1. autoload.php
-   File ini berfungsi untuk melakukan load / memuat library - library yang disediakan oleh Code Igniter seperti *database*, *form_validation*, dan library lainnya.
+## Requirements
 
-## 2. database.php
-   File ini berfungsi untuk melakukan koneksi *database* antara Code Igniter dengan database seperti MySQL
+- PHP 7.2.28 atau lebih tinggi
+- XAMPP 7.2.28 atau lebih tinggi
+- Code Igniter 3.1.11
+- Visual Studio Code atau text editor lainnya
 
-## 3. routes.php
-   File ini berfungsi untuk mengatur *routing* atau pengarahan *URL* dari Code Igniter
-  
-## 4. belajar.php, model_belajar.php, Selamat.php, Overview.php, 
-   File ini merupakan *controller* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
-   
-## 5. libarytopek.php
-   File ini merupakan *class* yang memiliki beberapa *method* dan digunakan sebagai *custom library* dalam Code Igniter ini.
+## Instalasi
 
-## 6. m_data.php
-   File ini merupakan *model* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
-   
-## 7. views/admin/overview.php, view_belajar.php, view_download.php, view_form_validation.php,view_selamat.php, view_uri_belajar.php
-   File ini merupakan *view* dalam Code Igniter ini, dokumentasi selengkapnya berada di dalam file.
+- Download Code Igniter [CodeIgniter](https://codeigniter.com/en/download).
+- Ekstrak Code Igniter kedalam folder yang telah dibuat.
+- Buka folder yang berisi Code Igniter dengan Text Editor pilihan anda.
+
+## Penggunaan
+
+## 1. _autoload.php_
+   File ini berfungsi untuk memuat seluruh **_library_** yang ada di dalam Code Igniter.
+   1. Setelah selesai instalasi Code Igniter, buka folder **application/confing**       kemudian buka **_autoload.php_**.
+
+   2. Dalam **_autoload.php_**, temukan kode 
+      ```php
+      $autoload['libraries'] = array();
+      ```
+   3. Kemudian tambahkan **_library_** seperti **_database dan form_validation_** kedalam baris kode tersebut.
+      ```php
+      $autoload['libraries'] = array('database','form_validation');
+      ```
+   4. Kemudan dalam **_autoload.php_**, temukan kode
+      ```php
+      $autoload['helper'] = array();
+      ```
+   5. Kemudian tambahkan **_helper_** seperti **_url,html, dan download_** kedalam baris kode tersebut.
+      ```php
+      $autoload['helper'] = array('url','html','download');
+      ```
