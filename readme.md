@@ -30,7 +30,7 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ```php
       $autoload['libraries'] = array('database','form_validation');
       ```
-   4. Fungsi bari baris kode diatas adalah memuat library **_database_** yang berfungsi untuk melakukan koneksi dan seluruh proses yang berhubungan dengan database dan **_form_validation_** berfungsi untuk membuat sebuah form beserta validasinya.
+   4. Fungsi bari baris kode diatas adalah memuat library **_database_** dan **_form_validation_**.
    
    5. Kemudan dalam **_autoload.php_**, temukan kode
       ```php
@@ -40,6 +40,7 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ```php
       $autoload['helper'] = array('url','html','download');
       ```
+   7. Fungsi dari baris kode tersebut adalah memuat library **_url, html, dan download_**.
       
 ## 2. _config.php_
    File ini berfungsi sebagai konfigurasi Code Igniter yang sudah anda install kedalam folder anda.
