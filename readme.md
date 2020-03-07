@@ -30,11 +30,13 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ```php
       $autoload['libraries'] = array('database','form_validation');
       ```
-   4. Kemudan dalam **_autoload.php_**, temukan kode
+   4. Fungsi bari baris kode diatas adalah memuat library **_database_** yang berfungsi untuk melakukan koneksi dan seluruh proses yang berhubungan dengan database dan **_form_validation_** berfungsi untuk membuat sebuah form beserta validasinya.
+   
+   5. Kemudan dalam **_autoload.php_**, temukan kode
       ```php
       $autoload['helper'] = array();
       ```
-   5. Kemudian tambahkan **_helper_** seperti **_url,html, dan download_** kedalam baris kode tersebut.
+   6. Kemudian tambahkan **_helper_** seperti **_url,html, dan download_** kedalam baris kode tersebut.
       ```php
       $autoload['helper'] = array('url','html','download');
       ```
