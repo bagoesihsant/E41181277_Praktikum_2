@@ -19,6 +19,7 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
 
 ## 1. _autoload.php_
    File ini berfungsi untuk memuat seluruh **_library_** yang ada di dalam Code Igniter.
+   
    1. Setelah selesai instalasi Code Igniter, buka folder **application/confing**       kemudian buka **_autoload.php_**.
 
    2. Dalam **_autoload.php_**, temukan kode 
