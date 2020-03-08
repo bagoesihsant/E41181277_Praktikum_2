@@ -138,5 +138,37 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    File ini berfungsi sebagai **_Controller_**. **_Controller_** adalah file dalam Code Igniter yang berfungsi untuk menghubungkan **_View_** dan **_Model_**. Penjelasan mengenai **_View_** dan **_Model_** akan dibahas di bagian setelah **_Controller_** ini.
    
    1. Setelah selesai mengedit **_routes.php_**, buka folder **application/controllers** kemudian buat file baru bernama **_Overview.php_**.
+      ![ImageDokumentasi](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_002.png)
    
+   2. Setelah selesai membuat **_Overview.php_**, buka file tersebut dalam text editor pilihan anda, dan ketikkan kode berikut :
+      ```php
+      <?php
+      
+         class Overview extends CI_Controller{
+         
+            public function __construct()
+            {
+               parent::__construct();
+            }
+            
+            public function index()
+            {
+               $this->load->view('admin/overview');
+            }
+         
+         }
+      
+      ?>
+      ```
+   3. Contoh kode tersebut adalah fungsi - fungsi atau method yang utama dalam **_Controller_** Code Igniter. Method **___construct()_** berfungsi sebagai method yang pertama kali dijalankan sebelum method lainnya, method **___construct()_** juga bisa disebut induk.
    
+   4. Fungsi / Method **_index()_** adalah sebagai method pertama yang diakses oleh browser, sama seperti ketika membuka folder berisi index.html, maka file yang pertama dijalankan atau dicari adalah index.
+
+## 6. _overview.php_
+   File ini memliki nama yang sama dengan **_Overview.php_** namun memiliki fungsi yang berbeda karena berada dalam folder **_views_**. 
+   
+   1. Setelah membuat file **_Overview.php_** pada folder **application/controllers**, buka folder **application/views** kemudian buat folder **admin**.
+   ![ImageDokumentasi2](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_003.png)
+   
+   2. Setelah membuat folder **admin**, buat file **_overview.php_** dengan huruf awalan kecil dalam folder **admin**.
+   ![ImageDokumentasi3](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_004.png)
