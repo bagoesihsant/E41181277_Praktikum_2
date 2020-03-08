@@ -133,3 +133,10 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       $route['admin'] = 'admin/overview';
       ```
    4. Fungsi dari baris kode tersebut, adalah menampilkan fungsi **_overview_** yang ada pada controller **_admin_** apabila user mengakses admin dalam URL browser. Penjelasan lebih lanjut akan ada setelah ini.
+   
+## 5. _Overview.php_
+   File ini berfungsi sebagai **_Controller_**. **_Controller_** adalah file dalam Code Igniter yang berfungsi untuk menghubungkan **_View_** dan **_Model_**. Penjelasan mengenai **_View_** dan **_Model_** akan dibahas di bagian setelah **_Controller_** ini.
+   
+   1. Setelah selesai mengedit **_routes.php_**, buka folder **application/controllers** kemudian buat file baru bernama **_Overview.php_**.
+   
+   
