@@ -62,7 +62,7 @@ $autoload['packages'] = array();
 /**
  * Meload / memuat library yang disediakan oleh Code Igniter kedalam project
  */
-$autoload['libraries'] = array('database','form_validation','librarytopek');
+$autoload['libraries'] = array('database','form_validation','librarycustom');
 
 /*
 | -------------------------------------------------------------------

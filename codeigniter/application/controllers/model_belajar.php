@@ -40,7 +40,7 @@ class Model_belajar extends CI_Controller {
 	*/
 	function custom_library()
 	{
-		$this->librarytopek->nama_saya();
+		$this->librarycustom->nama_saya();
 	}
 
 	/**
@@ -49,7 +49,7 @@ class Model_belajar extends CI_Controller {
 	*/
 	function custom_library_input($nama)
 	{
-		$this->librarytopek->nama_kamu($nama);
+		$this->librarycustom->nama_kamu($nama);
 	}
 
 	/**

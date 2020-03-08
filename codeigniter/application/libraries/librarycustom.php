@@ -9,7 +9,7 @@
      * 
      */
 
-    class Librarytopek
+    class Librarycustom
     {
 
         // Fungsi ini berfungsi untuk menampilkan nama pembuat library
