@@ -300,4 +300,25 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    
    11. Fungsi / Method **_user_** berfungsi untuk mengirimkan data yang telah diambil dari **_model_** m_data.php, penjelasan mengenai **_model_** akan dijelaskan pada bagian selanjutnya.
 
-## 8. 
+## 8. _m_data.php_
+   File ini berfungsi sebagai **_Model_**, **_Model_** adalah file yang bertugas untuk mengambil, mengubah, dan menghapus data yang berada di database melalui perintah **_Controller_**.
+   
+   1. Setelah selesai membuat dan mengedit **_model_belajar.php_**, buka folder **application/model** kemudian buat file bernama **_m_data.php_**.
+      ![ImageDokumentasi6](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_007.png)
+      
+   2. Kemudian ketikkan kode berikut ini kedalam **_m_data.php_**.
+      ```php
+      <?php
+         class M_data extends CI_Model{
+            function ambil_data()
+            {
+               return $this->db->get('user');
+            }
+         }      
+      ?>
+      ```
+   3. Fungsi / Method **_ambil_data_**, berfungsi untuk mengambil data dari database menggunakan method get dari library **_database_** yang telah dimuat melalui **_autoload.php_** kemudian mengembalikan data yang sudah diambil menuju **_Controller_**.
+   
+   4. Method **_this->db->get()_**, befungsi untuk mengambil data dari tabel yang berada di database.
+   
+## 9. 
