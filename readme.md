@@ -20,7 +20,7 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
 ## 1. _autoload.php_
    File ini berfungsi untuk memuat seluruh **_library_** yang ada di dalam Code Igniter.
    
-   1. Setelah selesai instalasi Code Igniter, buka folder **application/confing**       kemudian buka **_autoload.php_**.
+   1. Setelah selesai instalasi Code Igniter, buka folder **application/confing** kemudian buka **_autoload.php_**.
    
    2. Dalam **_autoload.php_**, temukan kode 
       ```php
@@ -89,28 +89,47 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    3. Kemudian tambahkan konfigurasi server berisi database yang akan digunakan, dengan memasukkan username server, dan password ( bila ada ), kemudian nama database yang akan digunakan.
    
    4. Contoh kode :
-   ```php
-   $db['default'] = array(
-            'dsn'	=> '',
-            'hostname' => 'localhost',
-            'username' => 'root',
-            'password' => '*****',
-            'database' => 'contohdb',
-            'dbdriver' => 'mysqli',
-            'dbprefix' => '',
-            'pconnect' => FALSE,
-            'db_debug' => (ENVIRONMENT !== 'production'),
-            'cache_on' => FALSE,
-            'cachedir' => '',
-            'char_set' => 'utf8',
-            'dbcollat' => 'utf8_general_ci',
-            'swap_pre' => '',
-            'encrypt' => FALSE,
-            'compress' => FALSE,
-            'stricton' => FALSE,
-            'failover' => array(),
-            'save_queries' => TRUE
-      );
-   ``` 
+      ```php
+      $db['default'] = array(
+               'dsn'	=> '',
+               'hostname' => 'localhost',
+               'username' => 'root',
+               'password' => '*****',
+               'database' => 'contohdb',
+               'dbdriver' => 'mysqli',
+               'dbprefix' => '',
+               'pconnect' => FALSE,
+               'db_debug' => (ENVIRONMENT !== 'production'),
+               'cache_on' => FALSE,
+               'cachedir' => '',
+               'char_set' => 'utf8',
+               'dbcollat' => 'utf8_general_ci',
+               'swap_pre' => '',
+               'encrypt' => FALSE,
+               'compress' => FALSE,
+               'stricton' => FALSE,
+               'failover' => array(),
+               'save_queries' => TRUE
+         );
+      ``` 
    5. Fungsi dari baris kode diatas adalah menyambungkan Code Igniter dengan server dan database yang akan digunakan.
-    
+   
+## 4. _routes.php_
+   File ini berfungsi mengatur seluruh **_routing_** atau pengarahan URL yang ada di Code Igniter.
+   
+   1. Setelah selesai mengisi **_database.php_**, buka folder **application/config** dan temukan **_routes.php_**.
+   
+   2. Dalam **_routes.php_**, temukan baris kode berikut :
+      ```php
+      $route['default_controller'] = 'welcome';
+      $route['404_override'] = '';
+      $route['translate_uri_dashes'] = FALSE;
+      ```
+   3. Kemudian tambahkan baris kode berikut ini :
+      ```php
+      $route['default_controller'] = 'welcome';
+      $route['404_override'] = '';
+      $route['translate_uri_dashes'] = FALSE;
+      $route['admin'] = 'admin/overview';
+      ```
+   4. Fungsi dari baris kode tersebut, adalah menampilkan fungsi **_overview_** yang ada pada controller **_admin_** apabila user mengakses admin dalam URL browser. Penjelasan lebih lanjut akan ada setelah ini.
