@@ -174,7 +174,7 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    ![ImageDokumentasi3](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_004.png)
    
    3. Setelah membuat file **_overview.php_**, buka file tersebut dalam text editor pilihan anda, kemudian ketikkan kode berikut :
-      ```php
+      ```html
       <!doctype html>
       <html lang="en">
         <head>
