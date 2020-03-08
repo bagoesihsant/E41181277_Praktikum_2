@@ -200,5 +200,104 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ```
    4. Setelah mengetikkan kode diatas, maka akan muncul tampilan seperti berikut :
       ![ImageDokumentasi4](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_005.png)
-   5. Jika berhasil muncul tampilan seperti contoh, maka anda telah berhasil memanggil **_view_** melalui **_Controller_**. **_view_** adalah halaman yang ditampilkan kepada user melalui **_Controller_**.
       
+   5. Jika berhasil muncul tampilan seperti contoh, maka anda telah berhasil memanggil **_view_** melalui **_Controller_**. **_view_** adalah halaman yang ditampilkan kepada user melalui **_Controller_**.
+   
+## 7. _model_belajar.php_
+   File ini memiliki fungsi yang sama dengan **_Controller Overview.php_**, namun memiliki beberapa method tambahan.
+   
+   1. Setelah selesai membuat dan mengedit **_overview.php_**, buka kembali folder **application/controllers** dan buat file **_model_belajar.php_**.
+   ![ImageDokumentasi5](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_006.png)
+   
+   2. Dalam file **_model_belajar.php_** tambahkan baris kode berikut ini :
+      ```php
+      <?php
+      defined('BASEPATH') OR exit('No direct script access allowed');
+
+      class Model_belajar extends CI_Controller {
+
+         function __construct(){
+            parent::__construct();		
+            $this->load->model('m_data');
+         }
+
+         function index()
+         {
+            $this->load->view('view_form_validation');
+         }
+
+
+         function download_file()
+         {
+            $this->load->view('view_download');
+         }
+
+
+         function file_download()
+         {
+            force_download('gambar/Screenshot-10.png',NULL);
+         }
+
+         function custom_library()
+         {
+            $this->librarytopek->nama_saya();
+         }
+
+         function custom_library_input($nama)
+         {
+            $this->librarytopek->nama_kamu($nama);
+         }
+
+         function cek_input()
+         {
+            $this->form_validation->set_rules('nama','Nama','required');
+            $this->form_validation->set_rules('email','Email','required');
+            $this->form_validation->set_rules('konfir_email','Konfirmasi email','required');
+
+            if($this->form_validation->run() != false)
+            {
+               echo "Form Validation sudah oke";
+            }else
+            {
+               $this->load->view('view_form_validation');
+            }
+
+         }
+
+         function belajarUri()
+         {
+            echo "Ini adalah data ke 1, yaitu : ". $this->uri->segment(1)."</br>";
+            echo "Ini adalah data ke 2, yaitu : ". $this->uri->segment(2)."</br>";
+            echo "Ini adalah data ke 3, yaitu : ". $this->uri->segment(3)."</br>";
+            echo "Ini adalah data ke 4, yaitu : ". $this->uri->segment(4)."</br>";
+            echo "Ini adalah data ke 5, yaitu : ". $this->uri->segment(5)."</br>";
+            echo "Ini adalah data ke 6, yaitu : ". $this->uri->segment(6)."</br>";
+            echo "Ini adalah data ke 7, yaitu : ". $this->uri->segment(7)."</br>";
+         }
+         
+         function user(){
+            $data['user'] = $this->m_data->ambil_data()->result();
+            $this->load->view('view_belajar',$data);
+         }
+
+      }
+      ```
+   3. Fungsi / Method **_download_file_** berfungsi untuk menampilkan **_view_** view_download.
+   
+   4. Fungsi / Method **_file_download_** berfungsi untuk melakukan download menggunakan method dari library **_download_** yang sudah dimuat melalui **_autoload.php_**. File yang di download dimasukkan letak nya melalui method **_force_download_**.
+   
+   5. Fungsi / Method **_custom_library_** berfungsi untuk menggunakan method dari library buatan sendiri, library tersebut akan dijelaskan nanti pada bagian berikutnya.
+   
+   6. Fungsi / Method **_custom_library_input($nama)_** berfungsi untuk menggunakan method dari library buatan sendiri, library tersebut akan dijelaskan nanti pada bagian berikutnya.
+   
+   7. Fungsi / Method **_cek_input_** berfungsi untuk melakukan validasi nilai yang dikirimkan oleh pengguna melalui **_view_** view_form_validation menggunakan library **_form_validation_** yang sudah dimuat melalui **_autoload.php_**.
+   
+   8. Method **_this->form_validation->set_rules()_** berfungsi untuk menentukan peraturan bagaimana input nanti, apakah wajib diisi atau tidak.
+   
+   9. Method **_this->form_validation->run()_** berfungsi untuk menjalankan validasi, apabila hasilnya **_false_** maka akan dikembalikan menuju **_view_** view_form_validation.php.
+   
+   10. Fungsi / Method **_belajarUri_** berfungsi untuk menampilkan data yang dikirmkan user melalui URL.
+   
+   11. Fungsi / Method **_user_** berfungsi untuk mengirimkan data yang telah diambil dari **_model_** m_data.php, penjelasan mengenai **_model_** akan dijelaskan pada bagian selanjutnya.
+
+## 8. 
