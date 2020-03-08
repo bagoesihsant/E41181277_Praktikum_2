@@ -199,4 +199,6 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       </html>
       ```
    4. Setelah mengetikkan kode diatas, maka akan muncul tampilan seperti berikut :
+      ![ImageDokumentasi4](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_005.png)
+   5. Jika berhasil muncul tampilan seperti contoh, maka anda telah berhasil memanggil **_view_** melalui **_Controller_**. **_view_** adalah halaman yang ditampilkan kepada user melalui **_Controller_**.
       
