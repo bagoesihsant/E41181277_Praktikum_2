@@ -59,4 +59,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Mengubah arah URL pengguna apabila pengguna mengakses controller admin
-$route['admin'] = 'admin/overview';
+$route['admin'] = 'overview';
