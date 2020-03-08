@@ -111,5 +111,6 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
             'failover' => array(),
             'save_queries' => TRUE
       );
-   ```   
+   ``` 
+   5. Fungsi dari baris kode diatas adalah menyambungkan Code Igniter dengan server dan database yang akan digunakan.
     
