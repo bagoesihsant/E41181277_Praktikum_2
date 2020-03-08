@@ -172,3 +172,29 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    
    2. Setelah membuat folder **admin**, buat file **_overview.php_** dengan huruf awalan kecil dalam folder **admin**.
    ![ImageDokumentasi3](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_004.png)
+   
+   3. Setelah membuat file **_overview.php_**, buka file tersebut dalam text editor pilihan anda, kemudian ketikkan kode berikut :
+      ```php
+      <!doctype html>
+      <html lang="en">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.min.css');?>" >
+
+          <title>Hello, world!</title>
+        </head>
+        <body>
+          <h1>Hello, world!</h1>
+
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="<?php echo base_url('js/bootstrap.min.js');?>"></script>
+        </body>
+      </html>
+      ```
