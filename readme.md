@@ -436,3 +436,37 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       </html>
       ```
    3. Dalam **_anchor_** akan diarahkan menuju URL yang kemudian akan melakukan proses download.
+   
+   4. Setelah memasukkan kode tersebut, maka muncul tampilan seperti ini :
+      
+      ![ImageDokumentasi13](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_016.png)
+      
+## 12. _librarycustom.php_
+   File ini berfungsi sebagai **_library_** yang dibuat sendiri oleh pengguna serta berisi Method / Fungsi buatan user sendiri.
+   
+   1. Setelah selesai mengedit **_view_download.php_**, buka folder **application/libraries** kemudian buat file baru bernama **_librarycustom.php_**.
+   
+   2. Kemudian ketikkan kode berikut :
+      ```php
+      <?php
+      
+       class Librarycustom
+       {
+           function nama_saya()
+           {
+               echo "Nama saya Bagoes Ihsan Taufiqurrahman";
+           }
+
+           function nama_kamu($nama)
+           {
+               echo "Nama kamu adalah ".$nama;
+           }
+       }    
+
+      ?>
+      ```
+  3. Kode diatas berfungsi untuk membuat sebuah Class baru bernama **_librarycustom_** dan akan digunakan sebagai **_library_**.
+  
+  4. Fungsi / Method **_nama_saya_** akan mencetak tulisan **_"Nama saya Bagoes Ihsan Taufiqurrahman"_**.
+  
+  5. Fungsi / Method **_nama_kamu()_** akan mencetak tulisan **_"Nama kamu adalah"_** yang kemudian diikuti oleh apa yang pengguna inputkan.
