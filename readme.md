@@ -409,3 +409,30 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       ![ImageDokumentasi11](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_015.png)
       
    4. Fungsi **_foreach_** adalah melakukan perulangan untuk setiap data yang dikirim melalui **_Controller_** yang kemudian akan ditampilkan menggunakan **_echo_**.
+   
+## 11. _view_download.php_
+   File ini berfungsi sebagai **_view_**.
+   
+   1. Setelah selesai mengedit **_view_belajar.php_**, buka folder **application/views** kemudian buat file **_view_download.php_**.
+      
+      ![ImageDokumentasi12](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_009.png)
+      
+   2. Kemudian ketikkan kode berikut ini :
+      ```php
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+      </head>
+      <body>
+
+          <h1> Selamat Datang, Klik link dibawah ini untuk mendownload file </h1>
+
+          <a href="<?php echo base_url();?>index.php/model_belajar/file_download/"> Download </a>
+
+      </body>
+      </html>
+      ```
+   3. Dalam **_anchor_** akan diarahkan menuju URL yang kemudian akan melakukan proses download.
