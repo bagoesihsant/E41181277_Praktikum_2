@@ -321,4 +321,5 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    
    4. Method **_this->db->get()_**, befungsi untuk mengambil data dari tabel yang berada di database.
    
-## 9. 
+## 9. _view_form_validation.php_
+   File ini berfungsi sebagai **_view_**.
