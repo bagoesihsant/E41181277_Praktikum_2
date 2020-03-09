@@ -296,7 +296,9 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    
    9. Method **_this->form_validation->run()_** berfungsi untuk menjalankan validasi, apabila hasilnya **_false_** maka akan dikembalikan menuju **_view_** view_form_validation.php.
    
-   10. Fungsi / Method **_belajarUri_** berfungsi untuk menampilkan data yang dikirmkan user melalui URL.
+   10. Fungsi / Method **_belajarUri_** berfungsi untuk menampilkan data yang dikirmkan user melalui URL. Fungsi / Method ini akan menghasilkan tampilan seperti berikut ini :
+       
+       ![ImageDokumentasi10](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_014.png)
    
    11. Fungsi / Method **_user_** berfungsi untuk mengirimkan data yang telah diambil dari **_model_** m_data.php, penjelasan mengenai **_model_** akan dijelaskan pada bagian selanjutnya.
 
@@ -353,3 +355,57 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
       </html>
       ```
    3. Kode diatas akan menghasilkan tampilan seperti dibawah ini.
+      
+      ![ImageDokumentasi7](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_011.png)
+      
+   4. Fungsi **_validation_errors_** befungsi untuk menampilkan pesan error apabila user tidak mengisi form sesuai dengan aturan yang ada pada **_Controller model_bealajar.php_**. Apabila terjadi error maka akan tampil seperti berikut :
+      
+      ![ImageDokumentasi8](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_012.png)
+      
+   5. Apabila seluruh form diisi maka akan muncul tampilan seperti berikut :
+   
+      ![ImageDokumentasi9](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_013.png)
+      
+## 10. _view_belajar.php_
+   File ini berfungsi sebagai **_view_**.
+   
+   1. Setelah selesai mengedit **_view_form_validation.php_**, buka folder **application/views** kemudian buat file baru bernama **_view_belajar.php_**.
+      
+      ![ImageDokumentasi11](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_010.png)
+      
+   2. Kemudian ketikkan kode seperti berikut ini :
+      ```php
+      <!DOCTYPE html>
+      <html>
+      <head>
+         <title>Menghubungkan codeigniter dengan database mysql</title>
+      </head>
+      <body>
+         <h1>Mengenal Model Pada Codeigniter | MalasNgoding.com</h1>
+         <table border="1">
+            <tr>
+               <th>Nama</th>
+               <th>Alamat</th>
+               <th>Pekerjaan</th>
+            </tr>
+            <!-- Berikut ini adalah fungsi yang digunakan untuk melakukan
+                looping / perulangan untuk mengambil data yang dikirim oleh
+                controller.
+             -->
+            <?php foreach($user as $u){ ?>
+            <tr>
+            <!-- Berikut ini adalah cara untuk menampilkan data yang dikirim oleh controller. -->
+               <td><?php echo $u->nama ?></td>
+               <td><?php echo $u->alamat ?></td>
+               <td><?php echo $u->pekerjaan ?></td>
+            </tr>
+            <?php } ?>
+         </table>
+      </body>
+      </html>
+      ```
+   3. Kode diatas akan menghasilkan tampilan sebagai berikut :
+      
+      ![ImageDokumentasi11](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_015.png)
+      
+   4. Fungsi **_foreach_** adalah melakukan perulangan untuk setiap data yang dikirim melalui **_Controller_** yang kemudian akan ditampilkan menggunakan **_echo_**.
