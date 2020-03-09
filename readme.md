@@ -322,4 +322,34 @@ Berikut ini adalah dokumentasi praktikum 2 workshop web framework.
    4. Method **_this->db->get()_**, befungsi untuk mengambil data dari tabel yang berada di database.
    
 ## 9. _view_form_validation.php_
-   File ini berfungsi sebagai **_view_**.
+   File ini berfungsi sebagai **_view_**. **_View_** adalah halaman yang akan ditampilkan kepada pengguna oleh Code Igniter melalui **_Controller_**.
+   
+   1. Setelah selesai membuat dan mengedit **_m_data.php_**, buka folder **application/views** kemudian buat file bernama **_view_form_validation.php_**.
+      
+      ![ImageDokumentasi7](https://github.com/bagoesihsant/E41181277_Praktikum_2/blob/master/img_dokumentasi/Screenshot_Dokumentasi_WorkshopPK2_008.png)
+      
+   2. Kemudian ketikkan kode berikut kedalam **_view_form_validation.php_**.
+      ```php
+      <!DOCTYPE html>
+      <html>
+      <head>
+         <title>Membuat form validation dengan Codeigniter | MalasNgoding.com</title>
+      </head>
+      <body>
+         <h1>Membuat Form Validation dengan CodeIgniter</h1>
+
+         <?php echo validation_errors(); ?>
+
+         <?php echo form_open('model_belajar/cek_input'); ?>
+            <label>Nama</label><br/>
+            <input type="text" name="nama"><br/>
+            <label>Email</label><br/>
+            <input type="text" name="email"><br/>
+            <label>Konfirmasi Email</label><br/>
+            <input type="text" name="konfir_email"><br/>
+            <input type="submit" value="Simpan">
+         </form>
+      </body>
+      </html>
+      ```
+   3. Kode diatas akan menghasilkan tampilan seperti dibawah ini.
